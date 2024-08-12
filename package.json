@@ -1,0 +1,27 @@
+{
+  "name": "essential-algorithms",
+  "version": "1.0.0",
+  "description": "Collection of essential algorithms you must know",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch 1"
+  },
+  "jest": {
+    "transform": {}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizmaricar/essential-algorithms.git"
+  },
+  "author": "Faiz Maricar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizmaricar/essential-algorithms/issues"
+  },
+  "homepage": "https://github.com/faizmaricar/essential-algorithms#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
