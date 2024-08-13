@@ -15,12 +15,6 @@ const problemfiles = fs
 const count = problemfiles.length;
 const problemNumber = Math.floor(count / 4) + 1;
 
-const files = [
-  `p${problemNumber}.md`,
-  `p${problemNumber}.spec.js`,
-  `p${problemNumber}-solution.js`,
-];
-
 fs.writeFile(
   path.join(problemDir, `p${problemNumber}.js`),
   `export default function p${problemNumber}() {}`,
@@ -29,8 +23,26 @@ fs.writeFile(
   }
 );
 
-files.forEach((file) => {
-  fs.writeFile(path.join(problemDir, file), "", function (err) {
+fs.writeFile(
+  path.join(problemDir, `p${problemNumber}-solution.js`),
+  `export default function p${problemNumber}() {}`,
+  function (err) {
     if (err) throw err;
-  });
-});
+  }
+);
+
+fs.writeFile(
+  path.join(problemDir, `p${problemNumber}.spec.js`),
+  `import p${problemNumber}Solution from "./p${problemNumber}-solution.js";\nimport p${problemNumber} from "./p${problemNumber}.js";\n\nconst func = global.isSolution ? p${problemNumber}Solution : p${problemNumber};\n\ndescribe("Problem ${problemNumber}: <Problem name>", () => {});\n`,
+  function (err) {
+    if (err) throw err;
+  }
+);
+
+fs.writeFile(
+  path.join(problemDir, file`p${problemNumber}.md`),
+  "",
+  function (err) {
+    if (err) throw err;
+  }
+);
