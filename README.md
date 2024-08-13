@@ -1,6 +1,6 @@
 # Essential algorithms
 
-This repo is meant to collect essential algorithm problems which I feel engineers should know by heart. The solutions to this problems will be provided and a test suite was created to test attempted solutions.
+Collection essential algorithm problems engineers should know by heart. The solutions to this problems will be provided and a test suite was created to test attempted solutions.
 
 ## How to use
 
@@ -16,3 +16,4 @@ The test suite will run on watch mode. There are a list of problems below. Click
 ## Problems
 
 [Problem 1: Move Zeroes](problems/p1.md)
+[Problem 2: Two Sum](problems/p2.md)
