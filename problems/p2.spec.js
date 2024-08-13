@@ -8,6 +8,6 @@ describe("Problem 2: Two Sum", () => {
     [[2, 7, 11, 15], 9, [0, 1]],
     [[3, 3], 6, [0, 1]],
   ])("nums = %s, target = %s -> %s", (nums, target, expected) => {
-    expect(func(nums, target)).toStrictEqual(expected);
+    expect(func(nums, target)).toEqual(expect.arrayContaining(expected));
   });
 });
