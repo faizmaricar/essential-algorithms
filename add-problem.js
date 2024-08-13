@@ -16,7 +16,7 @@ const files = fs
   .filter((file) => !fs.statSync(`${problemDir}/${file}`).isDirectory());
 
 const count = files.length;
-const problemNumber = Math.floor(count / 3);
+const problemNumber = Math.floor(count / 4);
 
 fs.readFile(ignore, "utf8", function (err, data) {
   if (err) throw err;

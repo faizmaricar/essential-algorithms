@@ -11,32 +11,8 @@ npm install
 npm test
 ```
 
-The test suite will run on watch mode. Click the header of a proble to be directed to a file where you can write your solution. If you solve it, the test for that problem will pass.
+The test suite will run on watch mode. There are a list of problems below. Click on a problem to read the problem statement. In the statement, you can click the header of the problem to be directed to a file where you can write your solution. If you solve it, the test for that problem will pass.
 
-## [Problem 1: Move Zeroes](p1.js)
+## Problems
 
-Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-
-**Note:** Modify in place without making a copy
-
-**Example 1**
-
-````
-
-Input: nums = [0,1,0,3,12]
-Output: [1,3,12,0,0]
-
-```
-
-**Example 2**
-
-```
-
-Input: nums = [0]
-Output: [0]
-
-```
-
-**[Source](https://leetcode.com/problems/move-zeroes/)**
-```
-````
+[Problem 1: Move Zeroes](problems/p1.md)
