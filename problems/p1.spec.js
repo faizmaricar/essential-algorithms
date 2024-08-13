@@ -10,7 +10,7 @@ describe("Problem 1: Move zeroes to the end", () => {
       [1, 3, 12, 0, 0],
     ],
     [[0], [0]],
-  ])("%s > %s", (nums, expected) => {
+  ])("%s -> %s", (nums, expected) => {
     func(nums);
     expect(nums).toStrictEqual(expected);
   });
