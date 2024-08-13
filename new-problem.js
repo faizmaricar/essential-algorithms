@@ -39,10 +39,6 @@ fs.writeFile(
   }
 );
 
-fs.writeFile(
-  path.join(problemDir, file`p${problemNumber}.md`),
-  "",
-  function (err) {
-    if (err) throw err;
-  }
-);
+fs.writeFile(path.join(problemDir, `p${problemNumber}.md`), "", function (err) {
+  if (err) throw err;
+});
