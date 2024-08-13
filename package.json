@@ -6,8 +6,10 @@
   "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --seed=0",
-    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --seed=1",
-    "add:problem": "node add-problem.js"
+    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --seed=1",
+    "watch:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --seed=1",
+    "new:problem": "node new-problem.js",
+    "prepare": "husky"
   },
   "jest": {
     "transform": {},
@@ -26,7 +28,7 @@
   },
   "homepage": "https://github.com/faizmaricar/essential-algorithms#readme",
   "devDependencies": {
-    "git": "^0.1.5",
+    "husky": "^9.1.4",
     "jest": "^29.7.0"
   }
 }
