@@ -1,10 +1,7 @@
 import p1Solution from "./p1-solution.js";
 import p1 from "./p1.js";
 
-console.log(process.argv);
-const [, , isSolution] = process.argv;
-
-const func = isSolution ? p1Solution : p1;
+const func = global.isSolution ? p1Solution : p1;
 
 describe("Problem 1: Move zeroes to the end", () => {
   test.each([

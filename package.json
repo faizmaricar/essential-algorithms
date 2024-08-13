@@ -5,12 +5,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
-    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --seed=0",
+    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --seed=1",
     "add:problem": "node add-problem.js"
   },
   "jest": {
-    "transform": {}
+    "transform": {},
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup.js"
+    ]
   },
   "repository": {
     "type": "git",
