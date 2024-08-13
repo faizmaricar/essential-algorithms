@@ -18,3 +18,5 @@ The test suite will run on watch mode. There are a list of problems below. Click
 [Problem 1: Move Zeroes](problems/p1.md)
 
 [Problem 2: Two Sum](problems/p2.md)
+
+[Problem 3: Two Sum II](problems/p3.md)
