@@ -5,9 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --seed=0",
-    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --seed=1",
-    "test:ds": "node --experimental-vm-modules node_modules/jest/bin/jest.js data-structures --watch",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js problems/.* --watchAll --seed=0",
+    "test:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js problems/.* --seed=1",
+    "test:ds": "node --experimental-vm-modules node_modules/jest/bin/jest.js data-structures/.* --watch",
     "watch:solutions": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --seed=1",
     "new:problem": "node new-problem.js",
     "prepare": "husky"
