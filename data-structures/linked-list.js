@@ -18,6 +18,11 @@ LinkedList.prototype.append = function (val) {
   this.size++;
 };
 
+LinkedList.prototype.prepend = function (val) {
+  let node = new Node(val, this.head);
+  this.head = node;
+};
+
 LinkedList.prototype.insertAt = function (val, index) {
   let newNode = new Node(val);
   let curr = this.head;

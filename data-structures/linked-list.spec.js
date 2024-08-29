@@ -27,6 +27,14 @@ describe("Linked List", () => {
     expect(list.size).toBe(values.length + 1);
   });
 
+  test("prepend method adds node to beginning of the list", () => {
+    let val = 92;
+    list.prepend(val);
+
+    expect(list.head.val).toBe(val);
+    expect(list.head.next.val).toBe(1);
+  });
+
   test("insertAt method adds node to position", () => {
     let val = 63,
       index = 2;
@@ -49,6 +57,6 @@ describe("Linked List", () => {
     list.removeAt(index);
     let curr = list.head;
     for (let i = 0; i < index; i++) curr = curr.next;
-    expect(curr.val).toBe(89);
+    expect(curr.val).toBe(54);
   });
 });
