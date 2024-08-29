@@ -33,3 +33,17 @@ LinkedList.prototype.insertAt = function (val, index) {
 
   this.size++;
 };
+
+LinkedList.prototype.removeAt = function (index) {
+  let curr = this.head,
+    prev = curr,
+    i = 0;
+
+  while (i < index) {
+    i++;
+    prev = curr;
+    curr = curr.next;
+  }
+
+  prev.next = curr.next;
+};

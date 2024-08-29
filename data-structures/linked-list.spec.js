@@ -2,6 +2,8 @@ import LinkedList from "./linked-list";
 
 describe("Linked List", () => {
   const list = new LinkedList();
+  const values = [12, 54, 89, 23];
+
   test("no properties", () => {
     expect(list.head).toBe(null);
     expect(list.size).toBe(0);
@@ -15,8 +17,6 @@ describe("Linked List", () => {
   });
 
   test("append method add node to the end of the list", () => {
-    let values = [12, 54, 89, 23];
-
     for (let value of values) list.append(value);
     let curr = list.head.next;
 
@@ -42,5 +42,13 @@ describe("Linked List", () => {
 
   test("inserAt method throws error if position does not exists", () => {
     expect(() => list.insertAt(34, 15)).toThrow("Index out of bounds");
+  });
+
+  test("removeAt method removes node at position", () => {
+    let index = 3;
+    list.removeAt(index);
+    let curr = list.head;
+    for (let i = 0; i < index; i++) curr = curr.next;
+    expect(curr.val).toBe(89);
   });
 });
