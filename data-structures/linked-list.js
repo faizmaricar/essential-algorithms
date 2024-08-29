@@ -10,9 +10,7 @@ LinkedList.prototype.append = function (val) {
   let curr = this.head;
   if (curr === null) this.head = node;
   else {
-    while (curr.next) {
-      curr = curr.next;
-    }
+    while (curr.next) curr = curr.next;
     curr.next = node;
   }
   this.size++;
